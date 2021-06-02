@@ -1,0 +1,1402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "minha fonte";
+}
+
+@font-face{
+    font-family: "minha fonte";
+    src: url("../fonte/Oswald-VariableFont_wght.ttf");
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.center{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.center .logo{
+    width: 150px;
+    height: 60px;
+    background-image: url("../images/logo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav.menu ul{
+    display: flex;
+}
+
+header nav.menu ul li:not(:last-of-type){
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+nav.menu ul li:last-of-type > a:nth-of-type(1):active{
+    color: red;
+}
+
+main{
+    width: 100%;
+}
+
+/* Logo abaixo os estilos da página home */
+
+main .banner{
+    width: 100%;
+    height: 560px;
+    background-image: url("../images/bg.jpg");
+    background-size: 70% 550px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-color: black;
+}
+
+main .container{
+    width: 100%;
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 1%;
+    padding-top: 150px;
+    z-index: 1;
+}
+
+.container .text > h2{
+    font-weight: normal;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.container .text{
+    background-color: red;
+    transform: skewX(-8deg);
+    margin-bottom: 7px;
+}
+
+.container .text:first-of-type{
+    width: 200px;
+    height: 60px;
+    position: relative;
+    left: 27px;
+}
+
+.container .text:nth-of-type(2){
+    width: 140px;
+    height: 60px;
+    position: relative;
+    left: 18px;
+}
+
+.container .text:nth-of-type(3){
+    width: 120px;
+    height: 60px;
+    position: relative;
+    left: 9px;
+}
+
+.container .text-contato{
+    width: 320px;
+    height: 48px;
+    background-color: white;
+    text-align: center;
+    transform: skewX(-10deg);
+}
+
+.container .text-contato p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/* menu mobile abaixo */
+nav.menu-mobile{
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/menu.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+/* fim menu mobile */
+
+main .vitrine{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.vitrine .center{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.center section.wraper-head{
+    width: 33.3%;
+    max-width: 216px;
+    height: 1px;
+    border-bottom: 1.5px solid black;
+}
+
+.center section.wraper-titulo{
+    width: 33.3%;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.center section.wraper-titulo h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.center section.wraper-carros{
+    width: 33.3%;
+    max-width: 214px;
+    margin-top: 45px;
+}
+
+.img-car{
+    width: 100%;
+    height: 150px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 12px;
+}
+
+.vitrine .tipo-car h3{
+    font-size: 17px;
+}
+
+.vitrine .tipo-car p{
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(77, 79, 79);
+}
+
+.vitrine .tipo-car{
+    margin-bottom: 6px;
+}
+
+.vitrine .detalhes{
+    width: 60%;
+    max-width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: red;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.vitrine .detalhes h3{
+    font-size: 17px;
+    color: white;
+    font-weight: normal;
+}
+
+main .window{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wraper-serviços{
+    width: 50%;
+    background-color: rgb(41, 41, 43);
+    padding: 60px 2% 60px 2%;
+    color: white;
+}
+
+.wraper-serviços .serviços{
+    padding-left: 110px;
+}
+
+.serviços h2{
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.wraper-serviços .serviços ul{
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.serviços-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.saiba-mais{
+    margin-top: 80px;
+    margin-left: 40px;
+    background-color: red;
+    padding: 5px 11px;
+    cursor: pointer;
+}
+
+.saiba-mais h3{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+section.wraper-depoimentos{
+    width: 50%;
+    background-color: red;
+    color: white;
+}
+
+.depoimentos{
+    padding: 60px 2% 60px 85px;
+}
+
+.depoimentos h2{
+    font-weight: normal;
+    margin-bottom: 14px;
+    font-size: 25px;
+}
+
+.depoimentos p{
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.depoimentos .name-client{
+    margin-top: 20px;
+    padding-left: 200px;
+    color: rgb(4, 3, 13);
+}
+
+.depoimentos .name-client p{
+    font-style: normal;
+}
+
+.formulario{
+    width: 100%;
+    padding: 60px 2%;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.wraper-line{
+    width: 33.3%;
+    max-width: 198px;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+}
+
+section.wraper-contato{
+    width: 33.3%;
+}
+
+section.wraper-contato h2{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+}
+
+input{
+    outline: 0;
+    width: 100%;
+    margin-top: 36px;
+    height: 45px;
+    padding-left: 14px;
+    border: 2px solid rgba(214, 212, 212);
+    font-size: 24px;
+    border-collapse: collapse;
+}
+
+input{
+    padding-bottom: 4px;
+}
+
+input:not(:first-of-type){
+    width: 50%;
+    max-width: 292px;
+    margin-top: 13px;
+}
+
+::-webkit-input-placeholder { /* Aqui se usou esse comando para mudar a cor do placeholder */
+    color: rgb(214, 212, 212);
+}
+
+textarea{
+    outline: 0;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    margin-top: 13px;
+    padding-left: 14px;
+    padding-top: 6px;
+    font-size: 24px;
+    border: 2px solid rgb(214, 212, 212);
+}
+
+form input[type=submit]{
+    font-size: 18px;
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 77px;
+    height: 42px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+/* Logo acima o fim dos estilos da página home */
+
+footer{
+    width: 100%;
+    background-color: rgb(41, 41, 43);
+}
+
+footer .center{
+    padding: 30px 2%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+footer ul li a{
+    color: white;
+}
+
+footer .direitos{
+    color: white;
+}
+
+footer .direitos h4{
+    font-size: 15px;
+}
+
+footer nav.menu ul{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer .direitos{
+    display: flex;
+    text-align: center;
+}
+
+footer nav.menu ul li:not(:last-of-type){
+    margin-right: 20px;
+}
+
+/* logo abaixo os estilos da página de vendas */
+
+main .container-venda{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    padding-bottom: 200px;
+}
+
+.head-venda{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.container-venda .line-titulo{
+    width: 39.3%;
+    height: 1px;
+    margin-top: 2px;
+    border-bottom: 2px solid black;
+}
+
+
+.container-venda .titulo-vendas{
+    text-align: center;
+    width: 240px;
+    
+}
+
+.container-venda .titulo-vendas h2{
+    font-weight: normal;
+}
+
+.container-venda .conteudo-vendas{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.conteudo-vendas section.wraper-venda-preço{
+    width: 27%;
+    max-width: 210px;
+    position: relative;
+    bottom: 12px;
+}
+
+section.wraper-venda-preço h3{
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+section.wraper-venda-preço .wraper-barra{
+    width: 100%;
+    height: 12px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+.wraper-barra .barra{
+    width: 18%;
+    height: 9px;
+    background-color: rgb(205, 209, 206);
+    border-radius: 4px;
+    position: relative;
+    top: -0.5px;
+}
+
+.barra .botao-push{
+    width: 18px;
+    height: calc(100% + 9px);
+    position: relative;
+    top: -4.8px;
+    margin-left: 24px;
+    border-radius: 4px;
+    border: 1px solid gray; 
+    background-color: rgb(205, 209, 206);
+}
+
+section.wraper-venda-preço .preço{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+
+section.wraper-venda-preço h3:last-of-type{
+    font-size: 17px;
+    padding-bottom: 8px;
+}
+
+.input-ano{
+    width: 100%;
+    height: 20px;
+}
+
+input[type=checkbox]{
+    width: 13px;
+    height: 13px;
+    margin-top: -50px;
+}
+
+.input-ano span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+    position: relative;
+    bottom: 1px;
+}
+
+.conteudo-vendas section.wraper-venda-carros{
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.wraper-venda-carros section.wraper-carros{
+    width: 33.3%;
+    max-width: 210px;
+}
+
+section.wraper-venda-carros > section.wraper-carros > .tipo-car p{
+    color: rgb(77, 79, 79);
+    font-size: 14px;
+    font-style: italic;
+}
+
+section.wraper-venda-carros > section.wraper-carros .detalhes{
+    width: 60%;
+    max-width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: red;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+section.wraper-venda-carros > section.wraper-carros  .detalhes > h3{
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+section.wraper-venda-carros > section.wraper-carros:nth-of-type(1n + 4){
+    margin-top: 35px;
+}
+
+/* Logo abaixo os estilos da página da galeria */
+
+main .container-galeria{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 2%;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+ .header-galeria{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     align-items: center;
+ }
+
+.container-galeria .line-galeria{
+    width: 45%;
+    border-bottom: 2px solid black;
+    margin-top: 2px;
+}
+
+.container-galeria .text-galeria{
+    width: 100px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.container-galeria .text-galeria h2{
+    font-weight: normal;
+}
+
+.container-galeria .center-galeria{
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.wraper-carro-galeria{
+    width: 100%;
+    height: 450px;
+    border: 12px solid rgb(171, 170, 169);
+    background-image: url("../images/opala-azul.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section.wraper-carro-galeria .exposiçao{
+    width: 170px;
+    height: 50px;
+    background-color: red;
+    margin-top: 335px;
+    position: relative;
+    left: 678px;
+}
+
+.exposiçao > h2{
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.galeria-flex{
+    width: 100%;
+    max-width: 877px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 135px;
+}
+
+section.wraper-modelos-galeria{
+    width: 25%;
+    height: 120px;
+    background-color: rgb(171, 170, 169);
+    border: 8px solid white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.wraper-modelos-galeria:nth-of-type(1),
+section.wraper-modelos-galeria:nth-of-type(2),
+section.wraper-modelos-galeria:nth-of-type(3),
+section.wraper-modelos-galeria:nth-of-type(4){
+    margin-top: 8px;
+}
+
+/*Logo abaixo os estilos da página de eventos */
+main .container-eventos{
+    width: 100%;
+    max-width: 1239px;
+    margin: 0 auto;
+    padding: 0 2%;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-eventos header.header-eventos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.line-evento{
+    width: 45%;
+    border-bottom: 2px solid black;
+    margin-top: 2px;
+}
+
+section.titulo-evento{
+    width: 100px;
+    text-align: center;
+}
+
+section.titulo-evento h2{
+    font-weight: normal;
+}
+
+section.filtro-evento{
+    width: 32%;
+    padding-top: 35px;
+}
+
+.container-filtro{
+    padding-left: 100px;
+}
+
+.container-filtro h3{
+    font-size: 17px;
+    padding-bottom: 8px;
+}
+
+.input-mes span{
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.input-mes input{
+    width: 12px;
+}
+
+section.encontro{
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+section.wraper-encontro{
+    width: 214px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+}
+
+section.wraper-encontro .img-encontro{
+    width: 100%;
+    height: 105px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-encontro h3{
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.text-encontro p{
+    font-size: 15px;
+    color: rgb(77, 79, 79);
+}
+
+.text-encontro span{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+section.wraper-encontro .detalhes{
+    width: 58%;
+    font-size: 16px;
+    margin-top: 16px;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+section.wraper-encontro .detalhes h3{
+    font-weight: normal;
+    padding-top: 6px;
+}
+
+/* Logo abaixo os estilos da página sobre */
+main .container-sobre{
+    width: 100%;
+    max-width: 1239px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header.header-sobre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 49px;
+}
+
+section.line-sobre{
+    width: 45%;
+    margin-top: 2px;
+    border-bottom: 2px solid black;
+}
+
+section.titulo-sobre{
+    width: 142px;
+    text-align: center;
+}
+
+section.titulo-sobre h2{
+    font-weight: normal;
+}
+
+section.informaçoes{
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+section.informaçoes .img-empresa{
+    width: 100%;
+    height: 350px;
+    background-image: url("../images/galpao.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-sobre h2{
+    padding: 34px 0;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.text-sobre p{
+    color: rgb(77, 79, 79);
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.flex-sobre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 72px;
+}
+
+.img-foto{
+    width: 30%;
+    max-width: 180px;
+    height: 163px;
+    background-image: url("../images/fotorafa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-foto{
+    width: 60%;
+    margin-left: 24px;
+    line-height: 24px;
+    color: rgb(77, 79, 79);
+    font-size: 18px;
+}
+
+
+/* mediaqueries abaixo */
+@media screen and (max-width:1018px){
+    main .banner{
+        background-size: 72% 550px;    
+    }
+
+    .serviços-flex{
+        display: block;
+    }
+
+    .saiba-mais{
+        width: 86px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    section.wraper-venda-carros section.wraper-carros{
+        width: 50%;
+        max-width: 295px;
+    }
+
+    section.wraper-venda-carros > section.wraper-carros:nth-of-type(1n + 3){
+        margin-top: 35px;
+    }
+
+    .container-venda .titulo-vendas{
+        background-color: white;
+        width: 300px;
+    }
+
+
+    /* abaixo as mediaqueries da página eventos */
+    section.wraper-encontro{
+        width: 50%;
+        max-width: 275px;
+        margin-right: 20px;
+    }
+
+    section.encontro{
+        width: 68%;
+        justify-content: space-between;
+    }
+
+    section.wraper-encontro .img-encontro{
+        height: 125px;
+    }
+
+}
+
+@media screen and (max-width:920px){
+    /* abaixo as mediaqueries da página de vendas */
+    section.wraper-venda-carros section.wraper-carros{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    section.wraper-venda-carros section.wraper-carros > .img-car{
+        height: 260px;
+    }
+
+    section.wraper-venda-carros > section.wraper-carros:nth-of-type(1n + 2){
+        margin-top: 35px;
+    }
+
+    .conteudo-vendas section.wraper-venda-carros{
+        width: 69%;
+    }
+
+    section.wraper-venda-carros section.wraper-carros .tipo-car{
+        margin: 0 auto;
+        width: 190px;
+    }
+
+    section.wraper-venda-carros section.wraper-carros .detalhes{
+        width: 88%;
+        max-width: initial;
+        margin-top: 15px;
+    }
+
+    /* aqui em baixo mediaqueries da galeria */
+    section.wraper-carro-galeria .exposiçao{
+        position: relative;
+        left: 0;
+        left: -12px;
+    }
+
+    section.wraper-modelos-galeria{
+        width: 50%;
+        height: 200px;
+        border: 0;
+        margin-top: 18px;
+    }
+
+    section.wraper-modelos-galeria:nth-of-type(1),
+    section.wraper-modelos-galeria:nth-of-type(2),
+    section.wraper-modelos-galeria:nth-of-type(3),
+    section.wraper-modelos-galeria:nth-of-type(4){
+        margin-top: 18px;
+    }
+
+    section.wraper-modelos-galeria:nth-of-type(1),
+    section.wraper-modelos-galeria:nth-of-type(3),
+    section.wraper-modelos-galeria:nth-of-type(5),
+    section.wraper-modelos-galeria:nth-of-type(7),
+    section.wraper-modelos-galeria:nth-of-type(9),
+    section.wraper-modelos-galeria:nth-of-type(11){
+        border-right: 9px solid white;
+    }
+
+    section.wraper-modelos-galeria:nth-of-type(2),
+    section.wraper-modelos-galeria:nth-of-type(4),
+    section.wraper-modelos-galeria:nth-of-type(6),
+    section.wraper-modelos-galeria:nth-of-type(8),
+    section.wraper-modelos-galeria:nth-of-type(10),
+    section.wraper-modelos-galeria:nth-of-type(12){
+        border-left: 9px solid white;
+    }
+
+    .galeria-flex{
+        max-width: 896px;
+        padding: 0 2%;
+        padding-bottom: 135px;
+
+    }
+
+    /* abaixo as mediaqueries da página eventos */
+    section.wraper-encontro{
+        width: 100%;
+        max-width: initial;
+        margin-right: 0;
+    }
+
+    .container-filtro{
+        padding-left: 20px;
+    }
+
+    section.wraper-encontro .img-encontro{
+        height: 250px;
+    }
+
+    .text-encontro{
+        margin: 0 auto;
+        max-width: 160px;
+    }
+
+    section.wraper-encontro .detalhes{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:900px){
+    main .banner{
+        height: 500px;
+        background-size: 100% 550px;
+    }
+
+    main .container{
+        max-width: 400px;
+        margin-left: 50px;
+        padding-top: 200px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .vitrine .center{
+        display: block;
+    }
+
+    .center section.wraper-head{
+        display: none;
+    }
+
+    .center section.wraper-titulo{
+        padding-bottom: 0;
+        margin: 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .center section.wraper-carros{
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .vitrine .detalhes{
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .img-car{
+        width: 100%;
+        height: 300px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 12px;
+    }
+
+    main .window{
+       flex-wrap: wrap;
+    }
+
+    .wraper-serviços{
+        width: 100%;
+    }
+
+    .wraper-serviços .serviços{
+        margin: 0 auto;
+        max-width: 165px;
+        padding-left: 0;
+    }
+
+    section.wraper-depoimentos{
+        width: 100%;
+    }
+
+    .depoimentos{
+        padding: 60px 2% 60px 2%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .depoimentos .name-client{
+        padding-left: 0;
+    }
+
+    input:not(:first-of-type){
+        width: 100%;
+        max-width: 600px;
+        margin-top: 13px;
+    }
+
+    footer .center{
+        display: block;
+        max-width: 450px;
+    }
+
+    footer .direitos{
+        max-width: 320px;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+
+    /* abaixo mediaqueries da página sobre */
+    .flex-sobre{
+        width: 100%;
+        display: block;
+    }
+
+    .img-foto{
+        width: 60%;
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .text-foto{
+        max-width: 300px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 630px){
+    .x{
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/letra-x.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        display: none;
+        right: 0;
+        margin-right: 30px;
+        top: 0;
+        margin-top: 40px;
+        z-index: 100;
+    }
+
+    nav.menu-mobile{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.menu-mobile ul{
+      position: absolute;  
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 80px 0;
+      text-align: left;
+      background-color: rgb(173, 81, 81);
+      padding-left: 20px;
+      top: -100%;
+      -webkit-transition-duration: 0.5s;
+      z-index: 99;
+    }
+
+    nav.menu-mobile ul li{
+       margin-bottom: 15px;
+    }
+
+    nav.menu-mobile ul li a{
+        -webkit-transition-duration: 0.6s;
+    }
+
+    nav.menu-mobile ul li a:hover{
+        color: white;
+    }
+
+    nav.menu-mobile:hover ul{
+        top: 0;
+        z-index: 99;
+    }
+
+    header nav.menu{
+        display: none;
+    }
+
+    main .container{
+        max-width: 330px;
+        padding-top: 150px;
+        margin: 0 auto;
+    }
+
+    .container-venda .conteudo-vendas{
+        display: block;
+    }
+
+    section.line-titulo{
+        display: none;
+    }
+
+    .container-venda .titulo-vendas{
+        text-align: center;
+        width: 240px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+    }
+
+    .conteudo-vendas section.wraper-venda-preço{
+        width: 100%;
+        max-width: 210px;
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    section.wraper-venda-preço h3{
+        text-align: center;
+    }
+
+    .input-ano{
+        width: 100%;
+        max-width: 140px;
+        margin: 0 auto;
+        height: 20px;
+        padding-left: 29px;
+    }
+
+    .conteudo-vendas section.wraper-venda-carros{
+        width: 100%;
+    }
+
+    /* mediaqueries da galeria abaixo */
+    .container-galeria .line-galeria{
+        display: none;
+    }
+
+    .container-galeria .text-galeria{
+        margin: 0 auto;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+    }
+
+    section.wraper-modelos-galeria{
+        width: 100%;
+        height: 300px;
+    }
+    
+    section.wraper-modelos-galeria:nth-of-type(1),
+    section.wraper-modelos-galeria:nth-of-type(3),
+    section.wraper-modelos-galeria:nth-of-type(5),
+    section.wraper-modelos-galeria:nth-of-type(7),
+    section.wraper-modelos-galeria:nth-of-type(9),
+    section.wraper-modelos-galeria:nth-of-type(11){
+        border: 0;
+    }
+
+    section.wraper-modelos-galeria:nth-of-type(2),
+    section.wraper-modelos-galeria:nth-of-type(4),
+    section.wraper-modelos-galeria:nth-of-type(6),
+    section.wraper-modelos-galeria:nth-of-type(8),
+    section.wraper-modelos-galeria:nth-of-type(10),
+    section.wraper-modelos-galeria:nth-of-type(12){
+        border: 0;
+    }
+
+    /* abaixo as mediaqueries da página de eventos */
+    main .container-eventos{
+        display: block;
+    }
+
+    section.line-evento{
+        display: none;
+    }
+
+    section.titulo-evento{
+        margin: 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    section.filtro-evento{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container-filtro{
+        padding-left: 50px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    section.encontro{
+        width: 100%;
+    }
+
+     /* abaixo mediaqueries da página sobre */
+     header.header-sobre{
+        max-width: 120px;
+        margin: 30px auto;
+        margin-top: 30px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 0;
+    }
+    
+    section.line-sobre{
+        display: none;
+    }
+
+    .text-sobre h2{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .container .text-contato{
+        width: 220px;
+    }
+
+    .container .text-contato p{
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    main .container{
+        padding: 0 2%;
+        padding-top: 35px;
+    }
+
+    main .banner{
+        height: 320px;
+        background-image: none;
+    }
+
+    main .container{
+        max-width: 250px;
+    }
+
+    .center section.wraper-carros{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    footer .direitos{
+        display: block;
+    }
+
+    footer nav.menu ul{
+        display: block;
+        text-align: center;
+    }
+
+    footer nav.menu ul li:not(:last-of-type){
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+
+    /* mediaqueries da página da galeria abaixo */
+    section.wraper-carro-galeria{
+        height: 300px;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    section.wraper-carro-galeria .exposiçao{
+        width: 170px;
+        height: 50px;
+        background-color: red;
+        margin-top: 20px;
+        position: relative;
+        left: -12px;
+    }
+
+}
+
+
+

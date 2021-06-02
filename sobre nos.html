@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="site de venda de carros">
+    <meta name="keywords" content="venda, carros">
+    <meta name="author" content="Sean Taron">
+    <link rel="stylesheet" href="projeto pratico 5 css/projeto pratico 5.css">
+    <script src="JS/script.js"></script>
+    <title>Veículos especiais</title>
+</head>
+<body>
+    <header> <!-- cabeça do site-->
+        <div class="center">
+            <div class="logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a style="color: red;" href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li> <!--Aqui se colocou o link da página e depois o id do formulário para que o usuário seja redirecionado até o formulário de contato-->
+                </ul>
+            </nav>
+
+            <div class="x" onclick="exitMenu()"></div> <!-- java script buttom para fechar o menu mobile-->
+            <nav class="menu-mobile" onclick="menuOpen(this)"> <!-- menu mobile-->
+                <ul id="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vendas.html">venda</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="eventos.html">eventos</a></li>
+                    <li><a style="color: white;" href="sobre nos.html">sobre nós</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="border-top: 3px solid red; border-bottom: 3px solid red;"> <!-- conteudo-->
+       <div class="container-sobre"> <!--cabeça onde está sobre-->
+           <header class="header-sobre">
+               <section class="line-sobre"></section>
+               <section class="titulo-sobre"><h2>SOBRE NÓS</h2></section>
+               <section class="line-sobre"></section>
+           </header>
+
+           <section class="informaçoes"> <!--conteudo onde fica as informaçoes-->
+                <div class="img-empresa"></div>
+                <div class="text-sobre">
+                    <h2>A RM Veículos Especiais</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim magna, pharetra nec tempus ut, elementum non nisi. In in semper sem, sit amet lacinia ex. Sed nisi ex, imperdiet commodo tristique nec, sodales at mauris. Suspendisse potenti. Proin condimentum erat sit amet purus facilisis, at rutrum nulla tincidunt. Curabitur egestas placerat ante ut porta. Vestibulum ut pellentesque ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum tempor enim at ex tempor volutpat. Vestibulum venenatis sapien vitae consequat malesuada. Vivamus et pulvinar dolor, feugiat pellentesque elit. Etiam et ultricies nisl. Donec faucibus erat nisl, at ullamcorper ex consectetur sit amet. Etiam vehicula orci ac justo ullamcorper mollis.</p>
+                </div>
+
+                <div class="flex-sobre">
+                    <div class="img-foto"></div>
+                    <div class="text-foto"><p>Vestibulum at velit quis sapien mattis rhoncus ac a risus. Sed venenatis dignissim lacinia. Ut venenatis viverra leo nec consectetur. Nulla nibh mi, rutrum dictum sagittis sed, ultricies vitae tortor. Nullam vehicula leo suscipit lectus rutrum, sit amet feugiat ante tempor.Phasellus fringilla tortor libero, id feugiat.</p></div>
+                </div>
+           </section>
+       </div>
+    </main>
+
+    <footer> <!--rodapé-->
+        <div class="center">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a style="color: red;" href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="direitos">
+                <p style="padding-right: 4px;">Todos os direitos reservados a</p>
+                <h4>RM Veículos Especiais</h4>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>

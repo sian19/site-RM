@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="site de venda de carros">
+    <meta name="keywords" content="venda, carros">
+    <meta name="author" content="Sean Taron">
+    <link rel="stylesheet" href="projeto pratico 5 css/projeto pratico 5.css">
+    <script src="JS/script.js"></script>
+    <title>Veículos especiais</title>
+</head>
+<body>
+    <header> <!-- cabeça do site-->
+        <div class="center">
+            <div class="logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a style="color: red;" href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="#formulario">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="x" onclick="exitMenu()"></div> <!-- java script buttom para fechar o menu mobile-->
+            <nav class="menu-mobile" onclick="menuOpen(this)"> <!-- menu mobile-->
+                <ul id="ul">
+                    <li><a style="color: white;" href="index.html">Home</a></li>
+                    <li><a href="vendas.html">venda</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="eventos.html">eventos</a></li>
+                    <li><a href="sobre nos.html">sobre nós</a></li>
+                    <li><a href="#formulario">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!-- conteudo-->
+        <div class="banner"> <!-- banner-->
+            <div class="container">
+                <div class="text"><h2>CONSULTORIA</h2></div>
+                <div class="text"><h2>COMPRA</h2></div>
+                <div class="text"><h2>VENDA</h2></div>
+                <div class="text-contato"><p>CONTATO@VEICULOSESPECIAIS.COM.BR</p></div>
+            </div>
+        </div>
+
+        <div class="vitrine"> <!-- vitrine de carros-->
+            <div class="center">
+                <section class="wraper-head"></section>
+                <section class="wraper-titulo"><h2>VEÍCULOS EM DESTAQUE</h2></section>
+                <section class="wraper-head"></section>
+                <section class="wraper-carros">
+                    <div style="background-image: url(images/carro1.jpg);" class="img-car"></div>
+                    <div class="tipo-car">
+                        <h3>Volkswagen Karmann-ghia</h3>
+                        <p>1.6 8v. Gasolina, 2P, Manual</p>
+                        <p>1969</p>
+                    </div>
+                    <div class="detalhes karmann"><H3>Mais detalhes <!--Java script --></H3></div>
+                </section>
+                <section class="wraper-carros">
+                    <div style="background-image: url(images/carro2.jpg);" class="img-car"></div>
+                    <div class="tipo-car">
+                        <h3>Chevrolet Opala</h3>
+                        <p>4cc, Bancos de Corvin, 2.5</p>
+                        <p>1980</p>
+                    </div>
+                    <div class="detalhes opala"><h3>Mais detalhes <!--Java script --></h3></div>
+                </section>
+                <section class="wraper-carros">
+                    <div style="background-image: url(images/carro3.jpg);" class="img-car"></div>
+                    <div class="tipo-car">
+                        <h3>Volkswagen Gol GTs</h3>
+                        <p>Turbo forjado, xenon e alturas</p>
+                        <p>legalizadas, 1991</p>
+                    </div>
+                    <div class="detalhes gol"><h3>Mais detalhes <!--Java script --></h3></div>
+                </section>
+            </div>
+        </div>
+        <div class="window"> <!-- janela de serviços e depoimentos-->
+            <section class="wraper-serviços">
+                <div class="serviços">
+                    <h2>SERVIÇOS</h2>
+                    <div class="serviços-flex">
+                        <ul>
+                            <li>Compra</li>
+                            <li>Venda</li>
+                            <li>Consignação</li>
+                            <li>Consultoria de veículos</li>
+                            <li>Indicação de mecânicos e peças</li>
+                        </ul>
+                        <div class="saiba-mais"><h3>Saiba mais</h3></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wraper-depoimentos">
+                <div class="depoimentos">
+                    <h2>DEPOIMENTOS</h2>
+                    <p>"O Rafael foi muito atencioso, me buscou no aeroporto</p>
+                    <p>e garantiutoda a comodidade e conforto no almoço, no transfer,</p>
+                    <p>na visita ao veículo e durante o test-drive"</p>
+                    <div class="name-client"><p>Gustavo Teixeira - Colecionador</p></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="formulario" id="formulario"> <!--formulário de contato-->
+            <form>
+                <section class="wraper-line"></section>
+                <section class="wraper-contato"><h2>ENTRE EM CONTATO</h2></section>
+                <section class="wraper-line"></section>
+                <input type="text" name="nome" placeholder="nome" required>
+                <input type="email" name="email" placeholder="email" required>
+                <input type="text" name="telefone" placeholder="telefone" required>
+                <textarea name="info adicionais" placeholder="mensagem"></textarea>
+                <input type="submit" value="ENVIAR" name="envio">
+            </form>
+        </div> 
+    </main>
+
+    <footer> <!--rodapé-->
+        <div class="center">
+            <nav class="menu">
+                <ul>
+                    <li><a style="color: red;" href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="#formulario">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="direitos">
+                <p style="padding-right: 4px;">Todos os direitos reservados a</p>
+                <h4>RM Veículos Especiais</h4>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
+

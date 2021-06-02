@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="site de venda de carros">
+    <meta name="keywords" content="venda, carros">
+    <meta name="author" content="Sean Taron">
+    <link rel="stylesheet" href="projeto pratico 5 css/projeto pratico 5.css">
+    <script src="JS/script.js"></script>
+    <title>Veículos especiais</title>
+</head>
+<body>
+    <header> <!-- cabeça do site-->
+        <div class="center">
+            <div class="logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a style="color: red;" href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li><!--Aqui se colocou o link da página e depois o id do formulário para que o usuário seja redirecionado até o formulário de contato-->
+                </ul>
+            </nav>
+
+            <div class="x" onclick="exitMenu()"></div> <!-- java script buttom para fechar o menu mobile-->
+            <nav class="menu-mobile" onclick="menuOpen(this)"> <!-- menu mobile-->
+                <ul id="ul">
+                    <div class="x"></div> <!-- java script buttom para fechar o menu mobile-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vendas.html">venda</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a style="color: white;" href="eventos.html">eventos</a></li>
+                    <li><a href="sobre nos.html">sobre nós</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="border-top: 3px solid red; border-bottom: 3px solid red;"> <!-- conteudo-->
+        <div class="container-eventos">
+            <header class="header-eventos"> <!--cabeça onde está eventos-->
+                <section class="line-evento"></section>
+                <section class="titulo-evento"><h2>EVENTOS</h2></section>
+                <section class="line-evento"></section>
+            </header> 
+
+            <section class="filtro-evento"> <!--conteudo do filtre por evento-->
+                <div class="container-filtro">
+                    <h3>Filtre por mês</h3>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Todos"><span>Todos</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Janeiro e Fevereiro"><span>Janeiro e Fevereiro</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Março e Abril"><span>Março e Abril</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Junho e Julho"><span>Junho e Julho</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Agosto e Setembro"><span>Agosto e Setembro</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Outubro e Novembro"><span>Outubro e Novembro</span>
+                    </div>
+                    <div class="input-mes">
+                        <input type="checkbox" name="mes[]" value="Dezembro"><span>Dezembro</span>
+                    </div>
+                </div>
+            </section>
+            <section class="encontro"> <!--Conteudo dos encontro dos carros-->
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/chevet.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de chevette</h3>
+                        <p>Koxixos da Beiramar Norte</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/opalaverde.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de opala</h3>
+                        <p>Koxixos da Beiramar Sul</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/volksgolgts.jpeg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de golgts</h3>
+                        <p>Koxixos da Beiramar Leste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/alfaromeu.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de alfaromeu</h3>
+                        <p>Koxixos da Beiramar Oeste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/bristol400.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de bristol 400</h3>
+                        <p>Koxixos da Beiramar Norte</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/buicksedan.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de buicksedan</h3>
+                        <p>Koxixos da Beiramar Sul</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/cadilac.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de cadilac</h3>
+                        <p>Koxixos da Beiramar Oeste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/chevroletpick.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de chevroletpick</h3>
+                        <p>Koxixos da Beiramar Leste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/c15.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de c15</h3>
+                        <p>Koxixos da Beiramar Norte</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/camaro.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de camaro</h3>
+                        <p>Koxixos da Beiramar Sul</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/opalass.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de opalass</h3>
+                        <p>Koxixos da Beiramar Oeste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+                <section class="wraper-encontro">
+                    <div style="background-image: url(images/opala-azul2.jpg);" class="img-encontro"></div>
+                    <div class="text-encontro">
+                        <h3>Encontro de opala azul</h3>
+                        <p>Koxixos da Beiramar Leste</p>
+                        <span>29/7</span>
+                        <div class="detalhes"><h3>Mais detalhes</h3><a href=""></a></div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer> <!--rodapé-->
+        <div class="center">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a style="color: red;" href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="direitos">
+                <p style="padding-right: 4px;">Todos os direitos reservados a</p>
+                <h4>RM Veículos Especiais</h4>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>

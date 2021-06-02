@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="site de venda de carros">
+    <meta name="keywords" content="venda, carros">
+    <meta name="author" content="Sean Taron">
+    <link rel="stylesheet" href="projeto pratico 5 css/projeto pratico 5.css">
+    <script src="JS/script.js"></script>
+    <title>Veículos especiais</title>
+</head>
+<body>
+    <header> <!-- cabeça do site-->
+        <div class="center">
+            <div class="logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a style="color: red;" href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li><!--Aqui se colocou o link da página e depois o id do formulário para que o usuário seja redirecionado até o formulário de contato-->
+                </ul>
+            </nav>
+
+            <div class="x" onclick="exitMenu()"></div> <!-- java script buttom para fechar o menu mobile-->
+            <nav class="menu-mobile" onclick="menuOpen(this)"> <!-- menu mobile-->
+                <ul id="ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a style="color: white;" href="vendas.html">venda</a></li>
+                    <li><a href="galeria.html">galeria</a></li>
+                    <li><a href="eventos.html">eventos</a></li>
+                    <li><a href="sobre nos.html">sobre nós</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="border-top: 3px solid red; border-bottom: 3px solid red;"> <!-- conteudo-->
+       <div class="container-venda">
+           <div class="head-venda">
+                <section class="line-titulo"></section>
+                <section class="titulo-vendas"><h2>VEÍCULOS PARA VENDA</h2></section>
+                <section class="line-titulo"></section>
+            </div>
+            <div class="conteudo-vendas"> <!--conteudo onde fica o filtro de vendas-->
+                <section class="wraper-venda-preço">
+                    <h3>Filtre por preço</h3>
+                    <div class="wraper-barra">
+                        <div class="barra"><div class="botao-push"></div></div>
+                    </div>
+                    <div class="preço">
+                        <p>RS5.000</p>
+                        <p>RS70.000</p>
+                    </div>
+                    <h3>Filtre por ano</h3>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="Todas as décadas"><span>Todas as décadas</span>
+                    </div>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="2000 a 2009"><span>2000 a 2009</span>
+                    </div>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="1990 a 1999"><span>1990 a 1999</span>
+                    </div>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="1980 a 1989"><span>1980 a 1989</span>
+                    </div>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="1970 a 1979"><span>1970 a 1979</span>
+                    </div>
+                    <div class="input-ano">
+                        <input type="checkbox" name="carros[]" value="1960 a 1969"><span>1960 a 199</span>
+                    </div>
+                    
+                </section>
+
+                <section class="wraper-venda-carros"> <!--conteudo onde fica a vitrine de carros a venda-->
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro1.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Volkswagen Karmann-ghia</h3>
+                            <p>1.6 8v. Gasolina, 2P, Manual</p>
+                            <p>1969</p>
+                            <div class="detalhes karmann"><H3>Mais detalhes <!--Java script --></H3></div>
+                        </div>
+                    </section>
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro2.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Chevrolet Opala</h3>
+                            <p>4cc, Bancos de Corvin, 2.5</p>
+                            <p>1980</p>
+                            <div class="detalhes opala"><h3>Mais detalhes <!--Java script --></h3></div>
+                        </div>
+                    </section>
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro3.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Volkswagen Gol GTs</h3>
+                            <p>Turbo forjado, xenon e alturas</p>
+                            <p>legalizadas, 1991</p>
+                            <div class="detalhes gol"><h3>Mais detalhes <!--Java script --></h3></div>
+                        </div>
+                    </section>
+
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro1.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Volkswagen Karmann-ghia</h3>
+                            <p>1.6 8v. Gasolina, 2P, Manual</p>
+                            <p>1969</p>
+                            <div class="detalhes karmann"><H3>Mais detalhes <!--Java script --></H3></div>
+                        </div>
+                    </section>
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro2.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Chevrolet Opala</h3>
+                            <p>4cc, Bancos de Corvin, 2.5</p>
+                            <p>1980</p>
+                            <div class="detalhes opala"><h3>Mais detalhes <!--Java script --></h3></div>
+                        </div>
+                    </section>
+                    <section class="wraper-carros">
+                        <div style="background-image: url(images/carro3.jpg);" class="img-car"></div>
+                        <div class="tipo-car">
+                            <h3>Volkswagen Gol GTs</h3>
+                            <p>Turbo forjado, xenon e alturas</p>
+                            <p>legalizadas, 1991</p>
+                            <div class="detalhes gol"><h3>Mais detalhes <!--Java script --></h3></div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+       </div>
+    </main>
+
+    <footer> <!--rodapé-->
+        <div class="center">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a style="color: red;" href="vendas.html">VENDA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="eventos.html">EVENTOS</a></li>
+                    <li><a href="sobre nos.html">SOBRE NÓS</a></li>
+                    <li><a href="https://site-rm.vercel.app/index.html#formulario">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="direitos">
+                <p style="padding-right: 4px;">Todos os direitos reservados a</p>
+                <h4>RM Veículos Especiais</h4>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
